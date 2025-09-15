@@ -31,7 +31,7 @@ This project was developed as part of the **ITI JavaScript Program** to showcase
 ---
 
 ## 📂 Project Structure
-Fundiy-Platform/<br>
+Fundiy-Platform
 ├── public/ # HTML, CSS, and frontend JS files.<br>
 ├── db.json # Mock database for local development.<br>
 ├── package.json # Project metadata & dependencies.<br>
