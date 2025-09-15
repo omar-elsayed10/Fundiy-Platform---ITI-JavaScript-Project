@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Campaigns</title>
+    <link rel="stylesheet" href="./css/campaigns.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  </head>
+  <body>
+    <nav>
+      <a href="./index.html"><div class="logo">Fundiy</div></a>
+      <button id="myCampaignsBtn" class="my-campaigns">My Campaigns</button>
+      <button id="allCampaignsBtn" class="all-campaigns">All Campaigns</button>
+      <button
+        onclick="window.location.href='create-campaign.html'"
+        class="create-campaign"
+      >
+        + Create Campaign
+      </button>
+      <button onclick="logout()" class="logout">Logout</button>
+    </nav>
+
+    <main>
+      <h1>All Campaigns</h1>
+      <div id="campaignsList" class="campaigns-container"></div>
+    </main>
+
+     <footer>
+      <div class="footer-content">
+        <div class="footer-item1">
+          <a href="#home"><h2>Fundiy</h2></a>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+          <!-- social media -->
+          <div class="social-media">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+          </div>
+        </div>
+        <div class="footer-item2">
+          <h2><strong>Explore</strong></h2>
+          <h4>About us</h4>
+          <h4>Pages</h4>
+          <h4>Blog</h4>
+          <h4>Privacy & Policy</h4>
+
+        </div>
+
+         <div class="footer-item3">
+          <h2><strong>Donate</strong></h2>
+          <h4>Give Donation</h4>
+          <h4>Become Volunteer</h4>
+          <h4>Child Sponsorship</h4>
+          <h4>Other Ways to Give</h4>
+        </div>
+
+         <div class="footer-item4">
+          <h2><strong>Subscribe Newsletter</strong></h2>
+          <h3>join our newsletter to stay updated about latest news and articles.</h3>
+          <div class="footer-item5">
+          <input type="text" placeholder="Enter your email">
+          <button>Subscribe</button>
+          </div>
+        </div>
+        </div>
+      </div>
+      <hr style="margin: 1em; height: 2px; ">
+      <p>Copyright &copy; 2025 Developed by <a href="#" style="color: #3ca707; text-decoration: none;">Eng.Omar Elsayed.</a></p>
+    </footer>
+
+    <script src="./js/campaigns.js"></script>
+  </body>
+</html>

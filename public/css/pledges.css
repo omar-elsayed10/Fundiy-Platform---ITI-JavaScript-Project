@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #e5f3f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.payment-container {
+  background: #fff;
+  padding: 2em;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 420px;
+}
+
+.payment-container h1 {
+  text-align: center;
+  margin-bottom: 1.5em;
+  font-size: 1.6rem;
+  color: #2e7d31;
+}
+
+.payment-form .form-group {
+  margin-bottom: 1.2em;
+}
+
+.payment-form label {
+  display: block;
+  margin-bottom: 0.5em;
+  font-weight: 500;
+  color: #333;
+}
+
+.payment-form input {
+  width: 100%;
+  padding: 0.75em;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.3s;
+}
+
+.payment-form input:focus {
+  border-color: #2e7d31;
+}
+
+.form-row {
+  display: flex;
+  gap: 1em;
+}
+
+.form-row .form-group {
+  flex: 1;
+}
+
+.pay-btn {
+  width: 100%;
+  padding: 0.9em;
+  border: none;
+  border-radius: 10px;
+  background-color: #2e7d31;
+  color: #fff;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.pay-btn:hover {
+  background-color: #256626;
+}

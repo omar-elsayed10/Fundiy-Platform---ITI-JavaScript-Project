@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background: #f8fff8;
+}
+
+header {
+  background: #2e7d32;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav button {
+  margin: 0 5px;
+  padding: 8px 16px;
+  border: none;
+  background: #4caf50;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+nav button:hover {
+  background: #388e3c;
+}
+
+nav button.danger {
+  background: #e53935;
+}
+
+main {
+  padding: 20px;
+}
+
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+table th,
+table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+table th {
+  background: #e8f5e9;
+  font-weight: bold;
+}
+
+.action-btn {
+  padding: 5px 10px;
+  margin: 2px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.action-btn.approve {
+  background: #4caf50;
+  color: white;
+}
+
+.action-btn.unapprove {
+  background: #fbc02d;
+  color: white;
+}
+
+.action-btn.delete {
+  background: #e53935;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  header h1 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+  }
+
+  nav {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+
+  nav button {
+    flex: 1 1 auto;
+    min-width: 100px;
+  }
+
+  main {
+    padding: 15px;
+  }
+
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+    width: 100%;
+  }
+
+  thead {
+    display: none;
+  }
+
+  tr {
+    margin-bottom: 15px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 10px;
+  }
+
+  td {
+    text-align: left;
+    padding: 8px 10px;
+    border: none;
+    position: relative;
+  }
+
+  td::before {
+    /* content: attr(data-label); */
+    font-weight: bold;
+    display: block;
+    margin-bottom: 4px;
+    color: #2e7d32;
+  }
+
+  .action-btn {
+    width: 100%;
+    margin-top: 6px;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.1rem;
+  }
+
+  nav button {
+    font-size: 0.9rem;
+    padding: 6px 12px;
+  }
+}

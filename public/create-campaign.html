@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Campaign</title>
+    <link rel="stylesheet" href="./css/create-campaign.css" />
+  </head>
+  <body>
+    <header>
+      <a href="./campaigns.html"><div class="logo">Fundiy</div></a>
+      <h1>Create a New Campaign</h1>
+      <button onclick="window.location.href='campaigns.html'" class="backBtn">back</button>
+    </header>
+
+    <main class="container">
+      <form id="campaignForm">
+       
+        <!-- Campaign Image -->
+        <div class="form-group">
+          <label for="campaignImage">Upload Campaign Image:</label>
+          <input type="file" id="campaignImage" accept="image/*" required />
+        </div>
+
+        <!-- Campaign Title -->
+        <div class="form-group">
+          <label for="campaignTitle">Campaign Title:</label>
+          <input
+            type="text"
+            id="campaignTitle"
+            placeholder="Enter campaign title"
+            required
+          />
+        </div>
+
+        <!-- Campaign Goal -->
+        <div class="form-group">
+          <label for="campaignGoal">Campaign Goal (EGP):</label>
+          <input
+            type="number"
+            id="campaignGoal"
+            placeholder="Enter campaign goal"
+            required
+          />
+        </div>
+
+        <!-- Campaign Deadline -->
+        <div class="form-group">
+          <label for="campaignDeadline">Deadline:</label>
+          <input type="date" id="campaignDeadline" required />
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" class="btn">Sumbit</button>
+      </form>
+    </main>
+
+     <footer>
+      <div class="footer-content">
+        <div class="footer-item1">
+          <a href="./index.html"><h2>Fundiy</h2></a>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+          <!-- social media -->
+          <div class="social-media">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+          </div>
+        </div>
+        <div class="footer-item2">
+          <h2><strong>Explore</strong></h2>
+          <h4>About us</h4>
+          <h4>Pages</h4>
+          <h4>Blog</h4>
+          <h4>Privacy & Policy</h4>
+
+        </div>
+
+         <div class="footer-item3">
+          <h2><strong>Donate</strong></h2>
+          <h4>Give Donation</h4>
+          <h4>Become Volunteer</h4>
+          <h4>Child Sponsorship</h4>
+          <h4>Other Ways to Give</h4>
+        </div>
+
+         <div class="footer-item4">
+          <h2><strong>Subscribe Newsletter</strong></h2>
+          <h3>join our newsletter to stay updated about latest news and articles.</h3>
+          <div class="footer-item5">
+          <input type="text" placeholder="Enter your email">
+          <button>Subscribe</button>
+          </div>
+        </div>
+        </div>
+      </div>
+      <hr style="margin: 1em; height: 2px; ">
+      <p>Copyright &copy; 2025 Developed by <a href="#" style="color: #3ca707; text-decoration: none;">Eng.Omar Elsayed.</a></p>
+    </footer>
+
+    <script src="./js/create-campaign.js"></script>
+  </body>
+</html>
